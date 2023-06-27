@@ -9,6 +9,7 @@
 
 :root {
     --main-hover-color: rgb(255,69,0);
+    --main-hover-color-receptek: rgb(255, 166, 0);
     --main-max-width:1400px;
 }
 
