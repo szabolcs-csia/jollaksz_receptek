@@ -3,147 +3,88 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100wv;
+    height: 100%;
     object-fit: cover;
     opacity: .9;
-    z-index: -10;
 }
-.main-receptek h2 {
+
+.main-receptek {
+    position: relative;
+    left: 0;
+    top: 0;
+
+}
+h2 {
     z-index: 10;
     position: absolute;
-    color: white;
+    color:white;
     top: 100px;
     left: 50%;
     font-size: 2.2em;
     font-weight: 400;
     text-transform: uppercase;
     width: 200px;
+    padding-bottom: 100px;
+    margin: auto;
 }
 .main-receptek p {
     position: relative;
     top: 200px;
-    color: white;
-    font-size: .9em;
+    margin: auto;
+    font-size: 0.85em;
+    padding-bottom: 200px;
     font-weight: 400;
     max-width: 1400px;
     text-align: justify;
-    margin: auto;
-    padding-bottom: 50px;
+    color: white;
 }
-
-/*******************************/
-/*********Container*************/
-
-.receptek{
-    position: relative;    
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /*background: rgba(0, 0, 0, 0.2);*/
-    z-index: 30;
-}
-/*.receptek-items {
-    color: var(--main-hover-color);
-}*/
 
 .container-receptek {
+    border-radius: 15px;
+    box-sizing: border-box;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
-    z-index: 30;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    max-width: 1400px;
+
 }
-.container-receptek .receptek-card {
-    position: relative;
+.receptek-card {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 350px;
-    max-width: 100%;
-    height: 300px;
-    background-color:rgba(184, 179, 179, 0.274);
-    border-radius: 20px;
-    transition: .5s;
-    box-shadow: 0 35px 80px rgba(0,0,0,.15);
-
-}
-.container-receptek .receptek-card:hover {
-    height:400px;
-}   
-
-.container-receptek .receptek-card .img-box {
-    position: absolute;
-    top: 20px;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 2px 3px 3px 3px rgb(43, 33, 20);
+    box-sizing: inherit;
     width: 300px;
-    height: 220px;
-    background: #333;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.5s;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-left: 60px;
 }
-.container-receptek .receptek-card:hover .img-box {
-    top: -100px;
-    scale: .75;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, .2);
-}
-
-.container-receptek .receptek-card .img-box  img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} 
-.container-receptek .receptek-card .content {
-    position: absolute;
-    top: 252px;
-    width: 100%;
-    height: 35px;
-    padding: 0 30px;
-    text-align: center;
-    overflow: hidden;
-    transition: 0.5s;
-}
-.container-receptek .receptek-card:hover .content {
-    top:130px;
-    height:250px;
-}
-
-.container-receptek .receptek-card .content h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--main-hover-color-receptek);
-}
-.container-receptek .receptek-card .content p{
-    color: #333;
-    
-
-}
-
-/*.content {
-    display: flex;
-    flex-direction: column;
-}*/
-
-
-.container-receptek .receptek-card .content a{
-    position: relative;
-    top: 15px;
-    display:inline-block;
-    padding: 12px 25px;
-    text-decoration: none;
-    background: black;
+.receptek-card h3 {
     color: white;
-    font-weight: 500;
-
+    font-size: 1.2rem;
+    margin: 10px 10px;
+    text-align: center;
+    text-shadow: 0.8px 0.8px black;
+    text-transform: uppercase;
 }
 
-.container-receptek .receptek-card .content a:hover {
-    opacity: .8;
+.receptek-card img{
+    display: inline;
+    width: 300px;
+    min-width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+
+.receptek-card:hover{
+    transform: scale(0.8) translateX(-10px);
+    transition: 2s;
+    color: var(--main-hover-color);
+    font-size: 1.3rem;
 }
