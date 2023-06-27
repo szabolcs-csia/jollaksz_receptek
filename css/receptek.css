@@ -1,0 +1,149 @@
+.main-receptek video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100wv;
+    object-fit: cover;
+    opacity: .9;
+    z-index: -10;
+}
+.main-receptek h2 {
+    z-index: 10;
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 50%;
+    font-size: 2.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 200px;
+}
+.main-receptek p {
+    position: relative;
+    top: 200px;
+    color: white;
+    font-size: .9em;
+    font-weight: 400;
+    max-width: 1400px;
+    text-align: justify;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/*******************************/
+/*********Container*************/
+
+.receptek{
+    position: relative;    
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: rgba(0, 0, 0, 0.2);*/
+    z-index: 30;
+}
+/*.receptek-items {
+    color: var(--main-hover-color);
+}*/
+
+.container-receptek {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    z-index: 30;
+}
+.container-receptek .receptek-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background-color:white;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 0 35px 80px rgba(0,0,0,.15);
+
+}
+.container-receptek .receptek-card:hover {
+    height:400px;
+}   
+
+.container-receptek .receptek-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container-receptek .receptek-card:hover .img-box {
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .2);
+}
+
+.container-receptek .receptek-card .img-box  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.container-receptek .receptek-card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container-receptek .receptek-card:hover .content {
+    top:130px;
+    height:250px;
+}
+
+.container-receptek .receptek-card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-hover-color-receptek);
+}
+.container-receptek .receptek-card .content p{
+    color: #333;
+    
+
+}
+
+/*.content {
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+.container-receptek .receptek-card .content a{
+    position: relative;
+    top: 15px;
+    display:inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: black;
+    color: white;
+    font-weight: 500;
+
+}
+
+.container-receptek .receptek-card .content a:hover {
+    opacity: .8;
+}
